@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+ <html>
+    <head>
+      <title>Javascript task 3</title>
+    </head>
+   <body>
+    <script>
+          function Calc(num) {
+
+            let divisionArr = [];
+             let output;
+
+            for( let i = 1; i <= num; i++) {
+
+              if( i % 2 === 0 && i % 3 === 0 && i % 5 === 0){
+                output = "yu-gi-oh";
+              } else if( i % 2 === 0 && i % 3 === 0){
+                output = "yu-gi";
+              } else if( i % 2 === 0 && i % 5 === 0 ){
+                output = "yu-oh";
+              } else if( i % 3 === 0 && i % 5 === 0){
+                output = "gi-oh";
+              } else if ( i % 2 === 0){
+                output = "yu";
+              } else if ( i % 3 === 0){
+                output = "gi";
+              } else if( i % 5 === 0){
+                output = "oh";
+              }  else{
+                output = i;
+              }
+              //
+             divisionArr.push(output);
+
+         };
+              console.log(divisionArr);
+              return divisionArr;
+    };
+      //passing 100 as an argument
+          Calc(100);
+      //passing 33 as an argument
+        Calc(33);
+</script>
+</body>
+</html>
